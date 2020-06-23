@@ -12,3 +12,5 @@ git reset --hard HEAD^^				回退版本 上两个
 git reset --hard HEAD~100			回退上一百个版本
 git reset --hard commit_id			回退版本 commitid的版本号
 git reflog							查看每一次命令
+git diff HEAD -- fileName			查看工作区和版本库里版本区别
+git checkout -- file				撤销修改
