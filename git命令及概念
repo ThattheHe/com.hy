@@ -1,17 +1,37 @@
 mkdir directory 创建文件夹
 pwd	显示当前目录
 ls -ah 显示隐藏文件
-git add fileName					添加
+git add fileName				添加
 git commit -m "discription"			提交
-git status							查看状态
-git diff							查看修改处
-git log								查看历史版本
+git status					查看状态
+git diff					查看修改处
+git log						查看历史版本
 git log --pretty=oneline			查看历史版本（一行）
 git reset --hard HEAD^				回退版本 上一个
 git reset --hard HEAD^^				回退版本 上两个
 git reset --hard HEAD~100			回退上一百个版本
 git reset --hard commit_id			回退版本 commitid的版本号
-git reflog							查看每一次命令
+git reflog					查看每一次命令
 git diff HEAD -- fileName			查看工作区和版本库里版本区别
 git checkout -- file				撤销修改
 git reset HEAD <file>				从暂存区丢弃修改、再通过checkout --撤销工作区修改
+git rm file 					删除文件、再commit提交操作
+git remote add origin git@server-name/.git	关联远程库
+git remote rm origin				删除指定远程库
+git push -u origin master			第一次推送master分支的所有内容
+git push origin master				推送最新修改	
+git clone					克隆项目
+git branch					查看分支
+git branch file					创建分支
+git checkout file/git switch file		切换分支
+git checkout -b file/git switch -c file		创建+切换分支
+git merge file					合并某分支到当前分支、fast forward看不出来历史
+git branch -d file				删除分支
+git log --graph					查看分支合并图
+git merge --no-ff -m "" file			合并某分支到当前分支、普通模式合并
+git stash					储藏工作现场
+
+
+
+
+
